@@ -1,5 +1,4 @@
-# Hotel__Booking__Application
-Live Url
+
 # Hotel Booking App
 
 This is a basic Hotel Booking web application built using the MERN stack.
