@@ -40,6 +40,15 @@ app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
 
+// cors configuration
+app.use(
+  require("cors")({
+    origin: process.env.FRONTEND_URL,
+    optionsSuccessStatus: 200,
+  })
+);
+
+
 // Route Handlers
 app.use('/api/auth', authRoute);
 app.use('/api/users', usersRoute);
